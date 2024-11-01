@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shareable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+             <legend>Personal information</legend>
+             <label for="Username">Username</label> 
+             <input type="text" id="Username"  placeholder=" Inter your Username " required>
+             
+             <label for="name">Name</label> 
+             <input type="text" id="name"  placeholder=" Inter your name " required>
+
+             <label for="email">Email</label> 
+             <input type="email" id="email"  placeholder=" Inter your Email " required>
+
+
+
+             <label for="phone">Phone</label> 
+             <input type="tel" id="phone"  placeholder=" Inter your phone number " required>
+            </fieldset>
+
+
+<fieldset>
+    <legend>Education</legend>
+    <label for="education">Education</label>
+    <textarea name="text" id="education" placeholder="Inter your Education" rows="6" required></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Experience</legend>
+    <label for="experience">Experience</label>
+    <textarea name="text" id="experience" placeholder="Inter your work Experience" rows="6" required></textarea>
+</fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <label for=skills>Skills</label>
+    <textarea name="text" id="skills" placeholder="Inter your Skills" rows="6" required></textarea>
+</fieldset>
+
+<button type="submit"><b>Generate resume</b></button>
+    </form>
+<br>
+
+<!-- editable-->
+
+<div id="resume-display" contenteditable="true">
+    <!-- genrated -->
+</div>
+ <br>
+ <div id="shareable" style="display: none;">
+    <h2>Shareable-Link</h2>
+    <p> Unique link </p>
+    <a href="#" id="shareable-Link" target="_blank"></a>
+    <br>
+    <button id="downolad">Downolad-PDF</button>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
